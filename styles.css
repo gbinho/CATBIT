@@ -4,7 +4,40 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: gray;
-    color: aqua;
-    width: 100px;
-    height: 100px;
+    width: 40em;
+    height: 25em;
+    border-radius: 20px;
+}
+.tela {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+}
+.bt1 {
+    position: absolute;
+    top: 18%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: 22%;
+    background-color: rgb(233, 83, 24);
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.bt2 {
+    position: absolute;
+    top: 84%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: 22%;
+    background-color: rgb(20, 7, 1);
+    border-radius: 20px;
+    z-index: 10;
 }
