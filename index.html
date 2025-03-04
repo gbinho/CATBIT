@@ -11,13 +11,44 @@
 <body>
     <div class="catbit">
         <div class="tela">
+            <img id="telagatinhos" src="https://cataas.com/cat" alt="Gato fofinho">
         </div>
-        <div class="bt1"></div>
-
-        <div class="bt2"></div>
+        <button class="btn1">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"></span>
+        </button>
+        <button class="btn2">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"></span>
+        </button>
     </div>
-    </div>
 
+    <script>
+        const tela = document.querySelector(".tela");
+        const img = document.getElementById("telagatinhos");
+        const btn1 = document.querySelector(".btn1");
+        const btn2 = document.querySelector(".btn2");
+        let telaLigada = true;
+
+        btn1.addEventListener("click", () => {
+            let newImgUrl = `https://cataas.com/cat?timestamp=${new Date().getTime()}`;
+            console.log("URL carregada:", newImgUrl);
+            img.src = newImgUrl;
+        });
+
+        btn2.addEventListener("click", () => {
+            if (telaLigada) {
+                tela.style.backgroundColor = "black";
+                img.style.display = "none";
+            } else {
+                tela.style.backgroundColor = "";
+                img.style.display = "block";
+            }
+            telaLigada = !telaLigada;
+        });
+    </script>
 
 </body>
 
